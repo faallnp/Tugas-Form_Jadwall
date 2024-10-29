@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Perpus</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <div class="container">
+        <header><h2>Formulir Anggota Perpustakaan</h2></header>
+        <form class="form" action="#">
+            <div class="input-box"> 
+                <h3>Nama Lengkap</h3>
+                <div class="input">
+                <input type="text" placeholder="Masukan Namamu">
+                </div>
+            </div>
+            <div class="input-box"> 
+                <h3>Kota Lahir</h3>
+                <div class="input">
+                <input type="text" placeholder="Masukan kota/pilih kota lahir" list="kota_lahir" name="kota" id="kota">
+                <datalist id="kota_lahir">
+                    <option value="Semarang">Semarang</option>
+                    <option value="jakarta">jakarta</option>
+                    <option value="Klaten">Klaten</option>
+                    <option value="bandung">bandung</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Tegal">Tegal</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                    <option value="kudus">kudus</option>
+                </datalist>
+                </div> 
+            </div>
+            <div class="input-box"> 
+                <h3>Tanggal Lahir</h3>
+                <div class="input">
+                <input type="date" required>
+                </div>
+            </div>
+            <div class="kelamin"> 
+                <h3>Jenis Kelamin</h3>
+                <div class="kelamin">
+                    <div class="jns">
+                        <input type="radio" id="pria" name="Jenis" >
+                        <label for="pria">Pria</label>
+                    </div>
+                    <div class="jns">
+                        <input type="radio" id="wanita" name="Jenis" >
+                        <label for="wanita">Wanita</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box"> 
+                <h3>No. Telepon</h3>
+                <div class="input">
+                <input type="number" placeholder="Masukan Nomor Telpon" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <h3>Makanan Favorit</h3>
+                <input type="checkbox" name="Makanan_Favorit" value="Mie goreng"> Mie goreng
+                <input type="checkbox" name="Makanan_Favorit" value="Ayam geprek"> Ayam geprek
+            </div>
+            <div class="input-box"> 
+                <h3>Agama</h3>
+                <div class="input">
+                <select name="pilih">
+                    <div class="input">
+                    <option value="pilih">pilih</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Katholik">Katholik</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghuchu">Konghuchu</option>
+                    </div>
+                </select>
+                </div>
+            </div>
+            <div class="input-box address"> 
+                <h3>Alamat</h3>
+                <div class="input">
+                <input type="text" placeholder="Masukan Alamatmu">
+                </div>
+            </div>
+            <div class="tombol">
+                <button type="button" onclick="this.form.reset()">Hapus</button>
+                <button>Kirim</button>
+            </div>
+        </form>
+    </div>
+ </body>
+</html>
